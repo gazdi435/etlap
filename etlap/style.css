@@ -1,0 +1,319 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-image: url(images/hatter.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 55%;    
+    margin: auto;
+    background-color: #3a3a3a;
+    min-width: 600px;
+    max-width: 1200px;
+    padding-top: 20px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+#oldalicon {
+    width: 300px;
+    height: 250px;
+    margin-bottom: -30px;
+    box-shadow: orange 0px 0px 25px;
+    border-radius: 150px;
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    color: #fd1e2d;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 60px;
+    margin-bottom: -25px;
+}
+
+.linkek li a {
+    text-decoration: none;
+    color: #DB323D;
+}
+
+.linkek {
+    margin-top: 100px;
+    margin-left: -40px;
+    margin-bottom: 50px;
+}
+
+.linkek li {
+    display: inline;
+    margin: 35px;
+    padding: 5px;
+    border-bottom: #DB323D 3px solid;
+    font-size: 20px;
+}
+
+.linkek .aktivoldal {
+    border-bottom: #faa8a8 solid 3px;
+}
+
+.main {
+    width: 85%;
+    min-width: 500px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.sorok {
+    display: inline-block;
+    width: 100%;
+    border: #A62639 solid 5px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.oldalcimke {
+    width: 7%;
+    height: 256px;
+    margin-right: 5px;
+    font-size: 20px;
+    float: left;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #56494E;
+    border-right: solid 4px #A62639;
+}
+
+.oldalcimke p {
+    transform: rotate(-90deg);
+    position: relative;
+    margin-top: 125px;
+    letter-spacing: 5px;
+}
+
+.italok p {
+    margin-top: 170px;
+}
+
+.italokkiiras {
+    padding-left: 55px;
+}
+
+.alkoholositalok p {
+    margin-top: 145px;
+}
+
+.italokkiirasalkoholos {
+    padding-left: 30px;
+}
+
+#desszert {
+    margin-top: 145px;
+}
+
+.sor {
+    padding-top: 5px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 91%;
+    display: inline-block;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.sorelem {
+    display: inline-block;
+    padding: 10px;
+    background-color: #56494E;;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.etelkep {
+    width: 240px;
+    height: 120px;
+}
+
+.neve {
+    float: left;
+    margin: 10px;
+    font-size: 16px;
+    width: 150px;
+}
+
+.ar {
+    float: right;
+    margin: 12px 10px 10px 10px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.kosarba {
+    width: 240px;
+    height: 50px;
+    background-color: #DB323D;
+    border: 3px solid rgb(221, 221, 221);
+    border-radius: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.kosarba:active {
+    background-color:#A62639;
+}
+
+.kosarbakep {
+    height: 30px;
+    width: 30px;
+}
+
+.sor::-webkit-scrollbar {
+    border-radius: 20px;
+    height: 15px;
+}
+
+.sor::-webkit-scrollbar-thumb {
+    background: #ee3340;
+    border-radius: 20px;
+    height: 15px;
+}
+
+.sor::-webkit-scrollbar-thumb:active {
+    background: #A62639;
+    border-radius: 20px;
+    height: 15px;
+}
+
+.sor::-webkit-scrollbar-track {
+    height: 10px;
+    background-color: #56494E;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+#rendeles {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#rendelesgomb{
+    width: 200px;
+    height: 50px;
+    background-color: #ee3340;
+    color: white;
+    font-size: 20px;
+    border: white solid 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#rendelesgomb:active{
+    background-color:#A62639;
+}
+
+#osszegkiiras{
+    float: right;
+    padding: 10px;
+    border-bottom: #A62639 4px solid;
+}
+
+#osszeg {
+    display: inline-block;
+}
+
+h3 {
+    color: #fd1e2d;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+.terkepdiv{
+    text-align: center;
+}
+
+.terkep {
+    height: 400px;
+    width: 700px;
+}
+
+h4 {
+    color: #fd1e2d;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1450px) {
+.terkep{ height: 320px; width: 500px; }
+.linkek li { display: block; width: 150px; margin: auto; margin-top: 15px;}
+.oldalcimke {font-size: 16px;}
+}
+
+.impresszum {
+    width: 100%;
+    background-color: #A62639;
+    height: 25px;
+    margin-top: 100px;
+    color: black;
+    padding-top: 5px;
+}
+
+.elerhetosegek  li{
+    display: inline;
+}
+
+.elerhetosegek img{
+    height: 100px;
+    margin-top: 100px;
+}
+
+.elerhetosegek a {
+    width: 30%;
+    height: 330px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: black 3px solid;
+}
+
+h5 {
+    color: white;
+    margin: 0px;
+    width: 100%;
+    margin-left: -5px;
+    margin-top: 10px;
+}
+
+#fb{
+    background-color: rgb(31, 31, 218);
+    opacity: 0.6;
+    transition: 0.6s;
+    box-shadow: rgb(50, 50, 238) 0px 0px 10px;
+}
+
+#fb:hover{
+    opacity: 1;
+}
+
+#yt{
+    background-color: rgb(155, 33, 33);
+    opacity: 0.6;
+    transition: 0.6s;
+    box-shadow: #A62639 0px 0px 10px;
+}
+
+#yt:hover{
+    opacity: 1;
+}
+
+#insta{
+    background-color: rgb(206, 72, 23);
+    opacity: 0.6;
+    transition: 0.6s;
+    box-shadow: rgb(184, 61, 17) 0px 0px 10px;
+}
+
+#insta:hover{
+    opacity: 1;
+}
