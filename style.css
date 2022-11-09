@@ -456,13 +456,13 @@ input {
     border-radius: 20px;
 }
 
-#napimenufelsorolas{
+.napimenufelsorolas{
     text-align: left;
     font-size: 20px;
     float: left;
 }
 
-#napimenufelsorolas li{
+.napimenufelsorolas li{
     border-left: #7c303b 3px solid;
     list-style: none;
     margin-left: -20px;
