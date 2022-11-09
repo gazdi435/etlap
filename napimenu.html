@@ -1,0 +1,132 @@
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étlap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="urlapdiv">
+        <form id="bekeres" on="rendeleseltuntetes()">
+            <h3>Adatok bekérése</h3>
+            <label for="">Teljes neve: </label>
+            <input type="text" id="neve" name="neve" required placeholder="Gipsz Jakab"><abbr class="star">*</abbr>
+            <br>
+            <label for="telefonszam">Telefonszáma: </label>
+            <input type="tel" id="telefonszam" name="telefonszam" required placeholder="+36 20 000 0000"><abbr
+                class="star">*</abbr>
+            <br>
+            <label for="lakcim1">Lakcím1: </label>
+            <input type="text" id="lakcim1" name="lakcim1" required placeholder="4030 Debrecen"><abbr
+                class="star">*</abbr>
+            <br>
+            <label for="lakcim2">Lakcím2:</label>
+            <input type="text" id="lakcim2" required placeholder="Cím"><abbr class="star">*</abbr>
+            <br>
+
+            <label for="fizetes">Fizetési mód:</label>
+            <select name="fizetes" id="fizetes">
+                <option value="kezpenz">Készpénz</option>
+                <option value="kartya">Bankkártya</option>
+            </select>
+
+            <br>
+
+            <label for="megjegyzes">Megjegyzés:</label>
+            <br>
+            <textarea name="megjegyzes" id="megjegyzes" cols="40" rows="10"></textarea>
+            <br>
+            <input type="reset" value="Adatok törlése">
+            <input type="submit" value="Rendelés">
+        </form>
+    </div>
+
+    <div class="container">
+        <header>
+            <img src="images/icon.png" alt="" id="oldalicon">
+            <h2>Körtevirág étterem</h2>
+            <ul class="linkek">
+                <li><a href="index.html">Ételek</a></li>
+                <li><a href="italok.html">Italok</a></li>
+                <li class="aktivoldal"><a href="napimenu.html">Napi menük</a></li>
+                <li><a href="elerhetoseg.html">Elérhetőség</a></li>
+            </ul>
+        </header>
+        <div class="main">
+            <h3>Válasszon akciós termékeink közül!</h3>
+            <div id="napimenuk">
+                <div class="napimenuelem" id="elsoNapimenuTomb">
+                    <img src="Images/Food/gulyas.jpg" alt="" class="etelmenu"><img src="Images/Food/porkolt.jpg" class="etelmenu"> <img src="Images/Drinks/coke.png" alt=""
+                        class="italmenu">
+                    <div>
+                        <ul id="napimenufelsorolas">
+                            <li>Gulyásleves</li>
+                            <li>Pörkölt</li>
+                            <li>Coca cola</li>
+                        </ul>
+                        <span class="napimenuar"><i>3500Ft</i></span>
+                    </div>
+                    <button class="kosarba napimenukosar" onclick="nyomasnal('elsoNapimenu')"><img src="Images/kosarbaikon.png" alt="Kosárba tesz"
+                            class="kosarbakep"></button>
+                </div>
+                <div class="napimenuelem" id="masodikNapimenuTomb">
+                    <img src="Images/Food/husleves.jpg" alt="" class="etelmenu"><img src="Images/Food/csirkepaprikas.jpg" class="etelmenu"> <img src="Images/Drinks/lipton.jpg" alt=""
+                        class="italmenu">
+                    <div>
+                        <ul id="napimenufelsorolas">
+                            <li>Húsleves</li>
+                            <li>Csirkepaprikás</li>
+                            <li>Lipton</li>
+                        </ul>
+                        <span class="napimenuar"><i>3999Ft</i></span>
+                    </div>
+                    <button class="kosarba napimenukosar" onclick="nyomasnal('masodikNapimenu')"><img src="Images/kosarbaikon.png" alt="Kosárba tesz"
+                            class="kosarbakep"></button>
+                </div>
+                <div class="napimenuelem" id="harmadikNapimenuTomb">
+                    <img src="Images/Food/toltottkaposzta.jpeg" alt="" class="etelmenu"><img src="Images/Food/palacsinta.jpg" class="etelmenu"> <img src="Images/Drinks/dreher.jpg" alt=""
+                        class="italmenu">
+                    <div>
+                        <ul id="napimenufelsorolas">
+                            <li>Töltött káposzta</li>
+                            <li>Palacsinta</li>
+                            <li>Dreher</li>
+                        </ul>
+                        <span class="napimenuar"><i>4001Ft</i></span>
+                    </div>
+                    <button class="kosarba napimenukosar" onclick="nyomasnal('harmadikNapimenu')"><img src="Images/kosarbaikon.png" alt="Kosárba tesz"
+                            class="kosarbakep"></button>
+                </div>
+                <div class="napimenuelem" id="negyedikNapimenuTomb">
+                    <img src="Images/Food/raguleves.jpg" alt="" class="etelmenu"><img src="Images/Food/pite.jpg" class="etelmenu"> <img src="Images/Drinks/somersby.png" alt=""
+                        class="italmenu">
+                    <div>
+                        <ul id="napimenufelsorolas">
+                            <li>Raguleves</li>
+                            <li>Pite</li>
+                            <li>Somersby</li>
+                        </ul>
+                        <span class="napimenuar"><i>3000Ft</i></span>
+                    </div>
+                    <button class="kosarba napimenukosar"  onclick="nyomasnal('negyedikNapimenu')"><img src="Images/kosarbaikon.png" alt="Kosárba tesz"
+                            class="kosarbakep"></button>
+                </div>
+
+            </div>
+            <div id="rendeles"><button id="rendelesgomb" onmouseup="rendeleselohozas()">Rendelés</button>
+                <div id="osszegkiiras">Eddigi összeg: <div id="osszeg">0Ft</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="impresszum"><b><a class="belsoImpresszum" href="hasznalat.html">Használati feltétetelek. </a><a class="belsoImpresszum" href="felt.html">Adatvédelem</a></b></div>
+        </footer>
+    </div>
+</body>
+
+</html>

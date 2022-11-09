@@ -1,0 +1,21 @@
+p{
+    text-align: center;
+    text-align: justify;
+    padding: 1cm;
+}
+
+body {
+    background-color: lightblue;
+}
+
+div {
+    width: 55%;
+    border: 10px solid black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    padding: 5mm;
+}

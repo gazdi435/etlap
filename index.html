@@ -1,0 +1,215 @@
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étlap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="urlapdiv">
+        <form id="bekeres" on="rendeleseltuntetes()">
+            <h3>Adatok bekérése</h3>
+            <label for="">Teljes neve: </label>
+            <input type="text" id="neve" name="neve" required placeholder="Gipsz Jakab"><abbr class="star"></abbr>
+            <br>
+            <label for="telefonszam">Telefonszáma: </label>
+            <input type="tel" id="telefonszam" name="telefonszam" required placeholder="+36 20 000 0000"><abbr
+                class="star"></abbr>
+            <br>
+            <label for="lakcim1">Lakcím1: </label>
+            <input type="text" id="lakcim1" name="lakcim1" required placeholder="4030 Debrecen"><abbr
+                class="star"></abbr>
+            <br>
+            <label for="lakcim2">Lakcím2:</label>
+            <input type="text" id="lakcim2" required placeholder="Cím"><abbr class="star"></abbr>
+            <br>
+
+            <label for="fizetes">Fizetési mód:</label>
+            <select name="fizetes" id="fizetes">
+                <option value="kezpenz">Készpénz</option>
+                <option value="kartya">Bankkártya</option>
+            </select>
+
+            <br>
+
+            <label for="megjegyzes">Megjegyzés:</label>
+            <br>
+            <textarea name="megjegyzes" id="megjegyzes" cols="40" rows="10"></textarea>
+            <br>
+            <input type="reset" value="Adatok törlése">
+            <input type="submit" value="Rendelés">
+        </form>
+    </div>
+    <div class="container">
+        <header>
+            <img src="Images/icon.png" alt="" id="oldalicon">
+            <h2>Körtevirág étterem</h2>
+            <ul class="linkek">
+                <li class="aktivoldal"><a href="index.html">Ételek</a></li>
+                <li><a href="italok.html">Italok</a></li>
+                <li><a href="napimenu.html">Napi menük</a></li>
+                <li><a href="elerhetoseg.html">Elérhetőség</a></li>
+            </ul>
+        </header>
+        <div class="main">
+            <div class="sorok">
+                <div class="oldalcimke" id="levesekTomb">
+                    <p><b>Leves</b></p>
+                </div>
+                <div class="sor">
+                    <div class="sorelem" id="gulyaslevesTomb"><img alt="" class="etelkep" src="Images/Food/gulyas.jpg"><br>
+                        <div class="informacio">
+                            <div class="neve">Gulyásleves</div>
+                            <div class="ar">1000Ft</div>
+                        </div> <br> <button class="kosarba"  onclick="nyomasnal('gulyasleves')" id="gulyasleves"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="gyumolcslevesTomb"><img alt="" class="etelkep" src="Images/Food/gyumolcsleves.jpg"><br>
+                        <div class="informacio">
+                            <div class="neve">Gyümölcsleves</div>
+                            <div class="ar">1200Ft</div>
+                        </div><br><button class="kosarba" onclick="nyomasnal(this.id)" id="gyumolcsleves"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="huslevesTomb"><img alt="" class="etelkep" src="images/Food/husleves.jpg"><br>
+                        <div class="informacio">
+                            <div class="neve">Húsleves</div>
+                            <div class="ar">800Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal(this.id)" id="husleves"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="paloclevesTomb"><img alt="" class="etelkep" src="Images/Food/palocleves.jpeg"><br>
+                        <div class="informacio">
+                            <div class="neve">Palócleves</div>
+                            <div class="ar">1300Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal(this.id)" id="palocleves"><img alt="" src="images/kosarbaikon.png"
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="ragulevesTomb"><img src="Images/Food/raguleves.jpg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Raguleves</div>
+                            <div class="ar">1000Ft</div>
+                        </div> <br> <button class="kosarba"  onclick="nyomasnal(this.id)" id="raguleves"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="gombalevesTomb"><img src="Images/Food/gombaleves.jpg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">gombaleves</div>
+                            <div class="ar">1550Ft</div>
+                        </div> <br> <button class="kosarba"  onclick="nyomasnal(this.id)" id="gombaleves"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sorok">
+                <div class="oldalcimke" id="foetelTomb">
+                    <p><b>Főétel</b></p>
+                </div>
+                <div class="sor">
+                    <div class="sorelem" id="toltottKaposztaTomb"><img src="Images/Food/toltottkaposzta.jpeg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Töltött Káposzta</div>
+                            <div class="ar">1490Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal(this.id)" id="toltottKaposzta"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="porkoltTomb"><img src="Images/Food/porkolt.jpg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Pörkölt</div>
+                            <div class="ar">1150Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal(this.id)" id="porkolt"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="rakottkrumpliTomb"><img src="Images/Food/rakottkrumpli.jpg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Rakott Krumpli</div>
+                            <div class="ar">950Ft</div>
+                        </div> <br> <button class="kosarba" id="rakottkrumpli" onclick="nyomasnal(this.id)"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="csirkepaprikasTomb"><img src="Images/Food/csirkepaprikas.jpg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Csirkepaprikás</div>
+                            <div class="ar">800Ft</div>
+                        </div> <br> <button class="kosarba" id="csirkepaprikas" onclick="nyomasnal(this.id)"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="csirkecombTomb"><img src="Images/Food/csirkecomb.jpeg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Csirkecomb</div>
+                            <div class="ar">800Ft</div>
+                        </div> <br> <button class="kosarba" id="csirkecomb" onclick="nyomasnal(this.id)"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sorok">
+                <div class="oldalcimke" id="desszertTomb">
+                    <p id="Desszert"><b>Desszert</b></p>
+                </div>
+                <div class="sor">
+                    <div class="sorelem" id="palacsintaTomb"><img src="Images/Food/palacsinta.jpg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Palacsinta</div>
+                            <div class="ar">400Ft/db</div>
+                        </div> <br> <button class="kosarba" id="palacsinta" onclick="nyomasnal(this.id)"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="tiramisuTomb"><img src="Images/Food/tiramisu.jpg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Tiramisu</div>
+                            <div class="ar">800Ft</div>
+                        </div> <br> <button class="kosarba" id="tiramisu" onclick="nyomasnal(this.id)"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="somloiTomb"><img src="Images/Food/somloi.jpeg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Somlói Galuska</div>
+                            <div class="ar">1200Ft</div>
+                        </div> <br> <button class="kosarba" id="somloi" onclick="nyomasnal(this.id)"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="piteTomb"><img src="Images/Food/pite.jpg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Pite</div>
+                            <div class="ar">1200Ft</div>
+                        </div> <br> <button class="kosarba" id="pite" onclick="nyomasnal(this.id)"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="muffinTomb"><img src="Images/Food/muffin.webp" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Muffin</div>
+                            <div class="ar">800Ft</div>
+                        </div> <br> <button class="kosarba" id="muffin" onclick="nyomasnal(this.id)"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="sajtTortaTomb"><img src="Images/Food/torta.jpg" alt="" class="etelkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Torta</div>
+                            <div class="ar">2000Ft</div>
+                        </div> <br> <button class="kosarba" id="sajtTorta" onclick="nyomasnal(this.id)"><img src="images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                </div>
+            </div>
+            <div id="rendeles"><button id="rendelesgomb" onmouseup="rendeleselohozas()">Rendelés</button>
+                <div id="osszegkiiras">Eddigi összeg: <div id="osszeg">0Ft</div>
+                </div>
+
+            </div>
+
+        </div>
+        <footer>
+            <div class="impresszum"><b><a class="belsoImpresszum" href="hasznalat.html">Használati feltétetelek. </a><a class="belsoImpresszum" href="felt.html">Adatvédelem</a></b></div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étlap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="urlapdiv">
+        <form id="bekeres" on="rendeleseltuntetes()">
+            <h3>Adatok bekérése</h3>
+            <label for="">Teljes neve: </label>
+            <input type="text" id="neve" name="neve" required placeholder="Gipsz Jakab"><abbr class="star">*</abbr>
+            <br>
+            <label for="telefonszam">Telefonszáma: </label>
+            <input type="tel" id="telefonszam" name="telefonszam" required placeholder="+36 20 000 0000"><abbr
+                class="star">*</abbr>
+            <br>
+            <label for="lakcim1">Lakcím1: </label>
+            <input type="text" id="lakcim1" name="lakcim1" required placeholder="4030 Debrecen"><abbr
+                class="star">*</abbr>
+            <br>
+            <label for="lakcim2">Lakcím2:</label>
+            <input type="text" id="lakcim2" required placeholder="Cím"><abbr class="star">*</abbr>
+            <br>
+
+            <label for="fizetes">Fizetési mód:</label>
+            <select name="fizetes" id="fizetes">
+                <option value="kezpenz">Készpénz</option>
+                <option value="kartya">Bankkártya</option>
+            </select>
+
+            <br>
+
+            <label for="megjegyzes">Megjegyzés:</label>
+            <br>
+            <textarea name="megjegyzes" id="megjegyzes" cols="40" rows="10"></textarea>
+            <br>
+            <input type="reset" value="Adatok törlése">
+            <input type="submit" value="Rendelés">
+        </form>
+    </div>
+
+    <div class="container">
+        <header>
+            <img src="images/icon.png" alt="" id="oldalicon">
+             <h2>Körtevirág étterem</h2>
+            <ul class="linkek">
+                <li><a href="index.html">Ételek</a></li>
+                <li class="aktivoldal"><a href="italok.html">Italok</a></li>
+                <li><a href="napimenu.html">Napi menük</a></li>
+                <li><a href="elerhetoseg.html">Elérhetőség</a></li>
+            </ul>
+        </header>
+        <div class="main">
+            <div class="sorok">
+                <div id="italokTomb" class="oldalcimke italok">
+                    <p><b>alkoholmentes</b> <b class="italokkiiras">italok</b></p>
+                </div>
+                <div class="sor">
+                    <div class="sorelem" id="cocacolaTomb"><img src="Images/Drinks/coke.png" alt="Coca Cola" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Coca Cola 0,25l</div>
+                            <div class="ar">400Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('cocacola')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="cappyTomb"><img src="Images/Drinks/cappy.jpg" alt="Cappy" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Cappy 0,5l</div>
+                            <div class="ar">550Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('cappy')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="szentkiralyiTomb"><img src="Images/Drinks/szentkiralyi.png" alt="Szentkiralyi" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Szentkiralyi 0,5l</div>
+                            <div class="ar">200Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('szentkiralyi')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="fantaTomb"><img src="Images/Drinks/fanta.jpg" alt="Fanta" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Fanta 0,5l</div>
+                            <div class="ar">350Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('fanta')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="spriteTomb"><img src="Images/Drinks/sprite.jpeg" alt="Sprite" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Sprite 0,5l</div>
+                            <div class="ar">300Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('sprite')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="liptonTomb"><img src="Images/Drinks/lipton.jpg" alt="Lipton" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Lipton 0,5l</div>
+                            <div class="ar">400Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('lipton')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="redbullTomb"><img src="Images/Drinks/redbull.jpg" alt="Red Bull" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Red Bull 0,25l</div>
+                            <div class="ar">300Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('redbull')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sorok">
+                <div class="oldalcimke alkoholositalok" id="alkoholosTomb">
+                    <p><b>Alkoholos</b> <b class="italokkiirasalkoholos">italok</b></p>
+                </div>
+                <div class="sor">
+                    <div class="sorelem" id="soproniTomb"><img src="Images/Drinks/soproni.jpg" alt="Soproni" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Soproni 0,5l</div>
+                            <div class="ar">350Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('soproni')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="dreherTomb"><img src="Images/Drinks/dreher.jpg" alt="Dreher" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Dréher 0,5l</div>
+                            <div class="ar">400Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('dreher')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="staropramenTomb"><img src="Images/Drinks/staropramen.jpg" alt="Staropramen" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Staropramen 0,5l</div>
+                            <div class="ar">550Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('staropramen')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="somersbyTomb"><img src="Images/Drinks/somersby.png" alt="Somersby" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">somersby 0,33l</div>
+                            <div class="ar">500Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('somersby')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="whiskyTomb"><img src="Images/Drinks/whiskeycola.webp" alt="Whiskey Cola" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Whiskey Cola 0,4l</div>
+                            <div class="ar">600Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('whisky')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                    <div class="sorelem" id="heinekenTomb"><img src="Images/Drinks/heineken.jpg" alt="Heineken" class="italkep"><br>
+                        <div class="informacio">
+                            <div class="neve">Heineken 0,5l</div>
+                            <div class="ar">450Ft</div>
+                        </div> <br> <button class="kosarba" onclick="nyomasnal('heineken')"><img src="Images/kosarbaikon.png" alt=""
+                                class="kosarbakep"></button>
+                    </div>
+                </div>
+            </div>
+        <div id="rendeles"><button id="rendelesgomb" onmouseup="rendeleselohozas()">Rendelés</button> <div id="osszegkiiras">Eddigi összeg: <div id="osszeg">0Ft</div></div></div>
+        </div>
+        <footer>
+            <div class="impresszum"><b><a class="belsoImpresszum" href="hasznalat.html">Használati feltétetelek. </a><a class="belsoImpresszum" href="felt.html">Adatvédelem</a></b></div>
+        </footer>
+    </div>
+</body>
+</html>
