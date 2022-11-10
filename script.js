@@ -19,7 +19,7 @@ function nyomasnal(ertek) {
           document.getElementById(ertektomb).style.border = "4px solid #ee3340";
         }
         osszeg = osszeg + aktivCuccok[ertek + "Ar"]
-        document.getElementById("osszeg").innerHTML = osszeg
+        document.getElementById("osszeg").innerHTML = osszeg + "Ft"
     } else  {
         aktivCuccok[ertektomb] = false;
         document.getElementById(ertektomb).style.backgroundColor = "#56494E";
@@ -27,7 +27,7 @@ function nyomasnal(ertek) {
           document.getElementById(ertektomb).style.border = "none";
         }
         osszeg = osszeg - aktivCuccok[ertek + "Ar"]
-        document.getElementById("osszeg").innerHTML = osszeg
+        document.getElementById("osszeg").innerHTML = osszeg + "Ft"
     }
 
     if  (aktivCuccok['gulyaslevesTomb'] == true || aktivCuccok['gyumolcslevesTomb'] == true || aktivCuccok['huslevesTomb'] == true || aktivCuccok['paloclevesTomb'] == true || aktivCuccok['ragulevesTomb'] == true || aktivCuccok['gombalevesTomb'] == true) {
